@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
+  <%- include('./partials/head',{title : "Home"}) %>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <%- include('./partials/header') %>
+   <main>
 
+    <h1>Home</h1>
 
-    <a href="productos/datail/<%= id %>">producto 1</a>
-
-
+    <img style="width: 50%; margin: 0 auto; display: block;" src="/images/coming-soon-2550190_1920.jpg" alt="">
+  </main>
+     <%- include('./partials/footer') %>
   </body>
 </html>

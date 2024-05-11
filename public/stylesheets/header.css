@@ -1,0 +1,114 @@
+/* HEADER DESKTOP */
+
+.header{
+    padding: 30px;
+}
+.header__nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 5px;
+    border-bottom: solid 2px #A9A9A9;
+   
+}
+
+.header__nav--ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin: 0 10px;
+   
+}
+
+.header__nav--ul--users{
+    display: none;
+}
+
+@media(max-width : 1024px){
+    .header{
+        padding: 30px;
+    }
+    .header__nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        margin: 0 auto;
+        padding-bottom: 5px;
+        border-bottom: solid 2px  #A9A9A9;
+       
+    }
+    
+    .header__nav--ul{
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+        margin: 0 10px;
+       
+    }
+    
+    .header__nav--ul--users{
+        display: none;
+    }
+}
+@media(max-width : 768px){
+    .header{
+        padding: 30px;
+    }
+    .header__nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        margin: 0 auto;
+        padding-bottom: 5px;
+        border-bottom: solid 2px  #A9A9A9;
+       
+    }
+    
+    .header__nav--ul{
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+        margin: 0 10px;
+       
+    }
+    
+    .header__nav--ul--users{
+        display: none;
+    }
+}
+@media(max-width : 480px){
+    .header{
+        padding: 30px;
+    }
+    .header__nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        margin: 0 auto;
+        padding-bottom: 5px;
+        border-bottom: solid 2px  #A9A9A9;
+       
+    }
+    
+    .header__nav--ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;
+        margin: 0 10px;
+       
+    }
+    
+    .header__nav--ul--users{
+        display: none;
+    }
+}

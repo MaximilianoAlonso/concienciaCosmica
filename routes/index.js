@@ -8,6 +8,6 @@ router.get('/', index)
       .get('/about', about) 
       .get('/blog', blog)
       .get('/contacts', contacts)  
-      .get("/detail/:id", detail)
+    
       
 module.exports = router;

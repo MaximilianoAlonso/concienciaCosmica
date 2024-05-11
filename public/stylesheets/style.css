@@ -1,8 +1,8 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
-
-a {
-  color: #00B7FF;
-}
+@import './general.css';
+@import './index.css';
+@import './about.css';
+@import './blog.css';
+@import './contacts.css';
+@import './header.css';
+@import './footer.css';
+@import './suscríbete.css'

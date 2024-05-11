@@ -1,0 +1,31 @@
+.suscríbete{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: auto 0;
+    width: 300px;
+}
+
+.suscríbete input{
+    height: 30px;
+    border-radius: 5px;
+    outline: none;
+    border: solid 2px rgba(0, 0, 0, 0.5);
+}
+
+.suscríbete button{
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: darkmagenta;
+    
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.suscríbete p{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1rem;
+    color:  #a9a9a9;
+}
