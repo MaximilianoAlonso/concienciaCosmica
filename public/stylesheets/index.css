@@ -1,6 +1,250 @@
-main h1{
-    text-align: center;
-    color: black;
-    font-size: 2rem;
-    padding: 15px 0;
+/* MAIN */
+
+.home {
+  margin: 0 auto;
+}
+
+/* MAIN SECTION BANNER */
+
+.home--section--caja--banner {
+  margin-bottom: 100px;
+}
+.home--section--banner {
+  width: 85%;
+  margin: 0 auto;
+  position: relative;
+}
+.home--section--banner img {
+  width: 100%;
+  height: 400px;
+}
+.home--section--banner h3 {
+  position: absolute;
+  text-align: center;
+  left: 7%;
+  top: 40%;
+
+  color: #ffffff;
+}
+
+/* MAIN ULTIMOS POST */
+
+.home--section--posts {
+  width: 85%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 22px;
+  padding: 15px 0;
+}
+
+#post--1 {
+  text-align: center;
+}
+
+.home--section--posts h1 {
+  width: 100%;
+}
+
+.home--section--post {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 30%;
+}
+
+.home--section--post button {
+  width: 20%;
+  padding: 5px;
+  background-color: #ffffff;
+  color: #000000;
+}
+.home--section--post button a {
+  color: #000000;
+}
+
+.home--section--post img {
+  width: 100%;
+}
+
+.home--section--post--distinto {
+  width: 65%;
+  position: relative;
+}
+.home--section--post--distinto img {
+  width: 100%;
+}
+
+.home--section--post--distinto h3 {
+  background-color: #ffffff;
+  position: absolute;
+  padding: 20px 10px;
+  top: 40px;
+  left: 0px;
+}
+
+.home--section--post--distinto button {
+  position: absolute;
+  bottom: 6px;
+  right: 0px;
+  padding: 5px;
+  border: none;
+  background-color: #ffffff;
+}
+
+.home--section--post--distinto button a {
+  font-size: 2rem;
+  color: #000000;
+}
+
+/* MAIN SEPARADOR */
+
+.home--section--separador--1 {
+  margin: 20px auto;
+}
+
+.home--section--separador--1--item {
+  position: relative;
+  margin: 0 auto;
+  width: 85%;
+}
+
+.home--section--separador--1--item h3 {
+  position: absolute;
+  text-align: center;
+  top: 40%;
+  left: 22%;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.home--section--separador--1--item img {
+  width: 100%;
+  height: 400px;
+}
+
+.home--section--separador--2 {
+  margin: 20px auto;
+}
+
+.home--section--separador--2--item {
+  position: relative;
+  margin: 0 auto;
+  width: 85%;
+}
+
+.home--section--separador--2--item p {
+  text-align: center;
+  padding: 20px;
+}
+
+.home--section--separador--2--item h3 {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 32%;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.home--section--separador--2--item img {
+  width: 100%;
+}
+
+/* recursos */
+
+.home--section--recursos {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.home--section--recursos h1{
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.home--section--recursos--item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+ border-radius: 3px;
+  width: 350px;
+  background-color: #fbe3e3;
+ 
+}
+
+
+
+.home--section--recursos--item h3 ,h5{
+  width: 100%;
+  text-align: center;
+}
+.home--section--recursos--item img {
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  border: solid 4px violet;
+ position: relative; 
+ margin: 10px 0;
+}
+
+.texto--img{
+  position: absolute;
+  left: 30px;
+ bottom: 40px;
+ background-color: yellow;
+ padding: 1px 20px;
+ border-radius: 50px;
+ 
+}
+
+.home--section--recursos--items{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 30%;
+  margin: 10px auto;
+  position: relative;
+ 
+}
+
+
+.texto--fecha{
+  width: 100%;
+  text-align: center;
+  background-color: violet;
+}
+
+.texto--redes{
+  width: 100%;
+  height: 30px;
+  text-align: center;
+}
+
+.boton{
+  width: 100%;
+  height: 20px;
+  background-color: #ffffff;
+ text-align: center;
+ padding: 30px 0;
+ 
+}
+
+.boton--ver{
+  padding: 5px 15px;
+  background-color: lightslategrey;
+  color: #ffffff;
+  border-radius: 50px;
+  width: 80px;
+  text-align: center;
+  margin: 10px 0;
 }

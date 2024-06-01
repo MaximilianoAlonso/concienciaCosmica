@@ -1,3 +1,13 @@
+
+/* font-family: 'Gidole', sans-serif;
+font-family: 'Manjari', sans-serif;
+*/
+
+:root{
+  --tipografiaLogo: 'Gidole', sans-serif;
+  --tipografiaMenues: 'Manjari', sans-serif;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,7 +15,8 @@
 }
 
 body{
-  background-color: #f3f3f3;
+  background-color: #FFFFF0;
+  font-family: var(--tipografiaMenues);
 }
 
 li {
@@ -15,13 +26,12 @@ li {
 
 a{
     text-decoration: none;
-    color: #A9A9A9;
+    color: #000000;
   
 }
 
 
 main{
     width: 90%;
-    height: 1000px;
     margin: 30px auto;
 }
