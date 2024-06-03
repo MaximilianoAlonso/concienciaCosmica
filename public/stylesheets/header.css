@@ -2,16 +2,16 @@
 
 .header {
   padding-top: 30px;
+  margin: 0 auto;
 }
 .header__nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
   padding-bottom: 5px;
-  border-bottom: solid 2px #a9a9a9;
   text-transform: uppercase;
 }
 .header__nav--logo{
@@ -32,9 +32,8 @@
 
 .header__nav--ul {
   display: flex;
-  justify-content: center;
+  justify-content: end;
   flex-wrap: wrap;
-  margin: 0 10px;
   width: 60%;
 }
 .header__nav--ul li {
@@ -111,29 +110,13 @@
 
 
 
-@media (max-width: 1439px) {
-  
+@media (max-width: 1280px){
+
   .header__nav{
     width: 90%;
   }
+}
 
-  .header__nav--ul {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 0 10px;
-    width: 65%;
-  }
-
-  .header__nav--logo h2{
-    width: 100%;
-    font-size: 15px;
-    font-family: var(--tipografiaLogo);
-}
-.header__nav--logo img{
-  width: 62px;
-}
-}
 
 @media (max-width:768px) {
   
