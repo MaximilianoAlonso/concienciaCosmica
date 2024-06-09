@@ -15,22 +15,21 @@ font-family: 'Manjari', sans-serif;
 }
 
 body{
-  background-color: #FFFFF0;
+  background-color: #fdfdfd;
   font-family: var(--tipografiaMenues);
 }
 
 li {
   list-style: none;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 a{
     text-decoration: none;
-    color: #000000;
+    color: #131d20;
   
 }
 
 
-main{
-    width: 90%;
-    margin: 30px auto;
-}
+
