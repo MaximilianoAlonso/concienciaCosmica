@@ -47,3 +47,16 @@
 }
 
 
+@media (max-width: 1440px) {
+    .suscríbete{
+        width: 450px;
+    }
+    
+}
+@media (max-width: 1023px) {
+    .suscríbete{
+        width: 300px;
+    }
+    
+}
+

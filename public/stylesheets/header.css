@@ -38,6 +38,7 @@
   padding: 5px 20px;
   position: relative;
   float: left;
+  cursor: pointer;
 }
 
 /* header sub menus */
@@ -174,6 +175,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    transition: all 3s ease;
   }
   
   /* header logo */
@@ -192,18 +194,19 @@
   /* header menu */
   .nav {
     width: 350px;
-    height: 1000px;
-    display: none;
+    height: 800px;
+    display: flex;
     flex-direction: column;
     justify-content: start;
     background-color: #b1a8bd;
     position: absolute;
-    top: 0;
-    left: 0;
-    float: left;
-    opacity: 0;
+    top: -1100px;
+    left: -350px;
     cursor: pointer;
     z-index: 10;
+    border-radius: 100%;
+    opacity: 0;
+    transition: all 2s ease;
   }
 
   
@@ -233,7 +236,6 @@
     left: 150px;
     z-index: 10;
     width: 170px;
-    transition: all 0s ease;
   }
 
   .nav .section li,
@@ -248,6 +250,7 @@
   .nav ul li:hover > ul {
     visibility: visible;
     top: 0px;
+    
    }
   
   .nav ul li:hover{
@@ -270,7 +273,9 @@
   }
 
   .nav.visible{
-    display: flex;
+    top: 0;
+    left: 0;
+    border-radius: 0;
     opacity: 1;
   }
 
