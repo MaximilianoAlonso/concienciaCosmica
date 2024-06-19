@@ -73,7 +73,6 @@
 }
 
 .post .item {
-  overflow: hidden;
   width: 400px;
   padding: 10px;
 }
@@ -92,7 +91,6 @@
 .post .item img {
   display: block;
   width: 100%;
-  height: 150px;
   margin-bottom: 20px;
   background-color: saddlebrown;
 }
@@ -103,15 +101,28 @@
   padding: 10px;
 }
 
-/* .post .item1 figure{
-  width: auto;
-  height: 300px;
-} */
-.post .item1 figure img {
-  display: block;
-  width: 100%;
-  height: 250px;
-  background-color: red;
+.post figure{
+  overflow: hidden ;
+  width: 100% ;
+  height: 200px ;
+  
+}
+.post figure img{
+  width: 100% ;
+  height: auto 
+  
+}
+.post .item h4{
+  margin-top: 10px ;
+  font-weight: 900 ;
+}
+.postEffect{
+  opacity: 0;
+  transition:  all 0.5s;
+
+}
+.postEffectBefore{
+opacity: 1 ;
 }
 
 .post .item1 h3 {
@@ -293,7 +304,6 @@
 
   .post .item {
     width: 300px;
-    height: 500px;
     padding: 10px;
     margin: 0 0;
   }
@@ -404,7 +414,7 @@
   .post .item img {
     display: block;
     width: 100%;
-    height: 200px;
+   
     margin-bottom: 20px;
     background-color: saddlebrown;
   }
@@ -418,7 +428,6 @@
   .post .item1 img {
     display: block;
     width: 100%;
-    height: 500px;
     background-color: red;
   }
   
@@ -657,7 +666,7 @@
   }
 }
 
-.post figure{
+/* .post figure{
   overflow: hidden !important;
   width: 100% !important;
   height: 200px !important;
@@ -680,4 +689,4 @@
 }
 .postEffectBefore{
 opacity: 1 !important;
-}
+} */
