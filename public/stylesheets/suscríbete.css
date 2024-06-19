@@ -60,3 +60,46 @@
     
 }
 
+/* ------------- */
+.suscríbete .form h2{
+    width: 100%;
+    text-align: left;
+    padding: 15px 0;
+    text-transform: uppercase;
+    color:rgb(62, 0, 90);
+}
+
+.suscríbete .form p{
+    width: 100%;
+    text-align: left;
+    padding: 5px 0 35px;
+    color: #2f3a3dab;
+}
+
+.suscríbete select, .suscríbete .form input{
+    width: 48%;
+   height: 50px;
+    margin-bottom: 20px;
+    outline: none;
+    border-radius: 5px ;
+    border: solid 2px rgb(62, 0, 90) ;
+}
+.suscríbete div div{
+    width: 48%;
+    float: right;
+}
+.suscríbete label{
+    width: 100% !important;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+.suscríbete label a{
+    color: blue;
+}
+
+.suscríbete button{
+    color: white;
+    font-weight: 800;
+    background-color: rgb(62, 0, 90);
+}

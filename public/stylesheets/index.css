@@ -16,11 +16,12 @@
 .banner article p {
   text-align: center;
   font-size: 1.5rem;
-  font-weight: 300;
+font-weight: 300 ;
   position: absolute;
   top: 160px;
   left: 23%;
   color: #fdfdfd;
+  letter-spacing: 2px;
 }
 
 .banner article img {
@@ -37,7 +38,7 @@
 .bienvenida h2 {
   text-transform: uppercase;
   font-size: 2rem;
-  margin: 100px 0;
+  margin: 100px 0 10px;
 }
 
 .bienvenida p {
@@ -402,7 +403,7 @@ flex-wrap: wrap;
       left: 0;
      
   }
-   
+  
 }
 
 @media (max-width: 767px) {
@@ -440,4 +441,14 @@ flex-wrap: wrap;
     padding: 5px 10px;
     background-color: yellow;
 }
+}
+
+
+.post img{
+  width: auto;
+  
+}
+.post h4{
+  font-weight: 900;
+  margin-top: 10px;
 }

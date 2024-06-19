@@ -16,7 +16,15 @@
   align-items: center;
   flex-wrap: wrap;
   width: 25%;
+  font-family: 'Gidole', sans-serif;
+  text-transform: uppercase;
+
 }
+.logo h2{
+ font-weight: 500;
+
+}
+
 
 .logo img {
   width: 50px;
