@@ -44,15 +44,16 @@
 
     </nav>
 
+    
 
     <script>
         const nav = document.querySelector('#nav')
         const abrir = document.querySelector('#abrir')
         const cerrar = document.querySelector('#cerrar')
-        
+        const main = document.querySelector('body')
 
         abrir.addEventListener('click', () => {
-            nav.classList.add('visible')
+            nav.classList.toggle('visible')
         })
         cerrar.addEventListener('click', () => {
             nav.classList.remove('visible')
@@ -64,8 +65,7 @@
             nav.classList.remove('visible')
         })
 
-       
-       
+    
 
 
     </script>

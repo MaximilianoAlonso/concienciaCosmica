@@ -6,7 +6,7 @@
   align-items: center;
   flex-wrap: wrap;
   margin: 0 auto;
-  padding: 20px;
+  padding: 50px;
 }
 
 .footer--nav{
@@ -29,6 +29,9 @@
 .footer--nav h2{
   width: 100%;
   text-align: center;
+  text-transform: uppercase;
+  font-family: var(--tipografiaLogo);
+  font-weight: 300;
 }
 
 .footer--nav p{
