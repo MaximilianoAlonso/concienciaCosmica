@@ -5,8 +5,6 @@
 
   <body>
 
-
-    <a href="users">perfil</a>
     <%- include('./partials/header') %>
       <main class="home">
 
@@ -38,28 +36,36 @@
         </section>
 
         <!-- POST -->
-        <seection class="post">
+        <seection class="post postEffectContainer">
           <h2>últimos post</h2>
-          <article class="item2">
+
+          <!-- ITEM 1 -->
+          <article class="item2 postEffect" >
             <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              <br> Odit incidunt laboriosam
+               Odit incidunt laboriosam
             </h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor sint laudantium aut earum! Dicta, iure
               voluptatum! Tenetur porro neque vel illo delectus cum praesentium pariatur fugiat nesciunt beatae. Iure,
               magnam!</p>
             <button><a href="">Leer más</a></button>
           </article>
-          <article class="item1">
+
+          <!-- ITEM 2 -->
+          <article class="item1 postEffect">
             <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              <br> Odit incidunt laboriosam
+               Odit incidunt laboriosam
             </h3>
             <figure>
               <img src="/images/temporales/3.jpg" alt="image post">
             </figure>
             <a href="">+</a>
           </article>
-          <article class="item">
-            <img src="/images/temporales/4.jpg" alt="image post">
+
+           <!-- ITEM  3 -->
+          <article class="item postEffect">
+            <figure>
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5jPXcSBDHvL0SOYJ-58qpbo9o2pjgzAOxQw&s" alt="image post">
+            </figure>
             <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Odit incidunt laboriosam
             </h4>
@@ -68,25 +74,29 @@
               magnam!</p>
             <button><a href="">Leer más</a></button>
           </article>
-          <article class="item">
+
+          <!-- ITEM 4 -->
+          <article class="item postEffect">
             <figure>
               <img src="/images/temporales/5.jpg" alt="image post">
             </figure>
             <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              <br> Odit incidunt laboriosam
+               Odit incidunt laboriosam
             </h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor sint laudantium aut earum! Dicta, iure
               voluptatum! Tenetur porro neque vel illo delectus cum praesentium pariatur fugiat nesciunt beatae. Iure,
               magnam!</p>
               <button><a href="">Leer más</a></button>
           </article>
-          <article class="item">
+
+            <!-- ITEM 5 -->
+          <article class="item postEffect">
             <figure>
-              <img src="/images/temporales/2.jpg" alt="image post">
+              <img src="https://institutodyn.com/wp-content/uploads/terapias-alternativas.jpg" alt="image post">
             </figure>
             
             <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              <br> Odit incidunt laboriosam
+               Odit incidunt laboriosam
             </h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor sint laudantium aut earum! Dicta, iure
               voluptatum! Tenetur porro neque vel illo delectus cum praesentium pariatur fugiat nesciunt beatae. Iure,
@@ -129,5 +139,5 @@
 
       <%- include('./partials/footer') %>
   </body>
-
+<script src="js/home.js"></script>
 </html>
