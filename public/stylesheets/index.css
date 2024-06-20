@@ -1,43 +1,61 @@
 .home {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
   z-index: 0;
-  max-width: 1500px;
+ 
+
+
 }
 
 /* BANNER */
 .banner {
-  width: 98%;
+  display: flex;
   position: relative;
+  width: 100%;
   margin: 0 auto;
-  margin-bottom: 100px;
+  overflow: hidden;
 }
 
 .banner img{
-  width: 100%;
+  width: 130%;
+  height: auto;
+  border-radius: 5px
+
+  
 }
 
-.banner article p {
+.banner article div {
   width: 100%;
   text-transform: uppercase;
   text-align: center;
-  font-size: 1.5rem;
-  font-weight: 300;
   position: absolute;
-  top: 160px;
+  top: 170px;
   margin: 0 auto;
   color: #fdfdfd;
+  letter-spacing: 3px;
+  font-size: 20px;
+  line-height: 35px;
+  font-family: var(--tipografiaMenues);
+  text-transform: uppercase;
+  font-weight: 200;
 }
 
-
+.cita{
+  margin-top: 20px;
+}
 
 /* TEXTO BIENVENIDA */
 
 .bienvenida {
+
+  padding: 30px;
   width: 100%;
   text-align: center;
   margin: 150px auto;
+
+
 }
+
 
 .bienvenida h2 {
   text-transform: uppercase;
@@ -55,7 +73,7 @@
 /* POST */
 
 .post {
-  width: 90%;
+  width: 100%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -117,12 +135,14 @@
   font-weight: 900 ;
 }
 .postEffect{
-  opacity: 0;
-  transition:  all 0.5s;
+  visibility: hidden;
+  margin-top: 200px;
+  transition:  all 1s;
 
 }
 .postEffectBefore{
-opacity: 1 ;
+  visibility:visible;
+  margin-top: 0;
 }
 
 .post .item1 h3 {

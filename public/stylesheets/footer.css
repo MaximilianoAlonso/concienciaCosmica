@@ -1,12 +1,12 @@
-.footer{
-  width: 100%;
-  max-width: 1500px;
+.footer section{
+  font-family: 'Gidole', sans-serif !important;
+  width: 100%!important;
+ padding: 30px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  margin: 0 auto;
-  padding: 50px;
+  background-color: rgba(66, 11, 117, 0.116);
 }
 
 .footer--nav{
@@ -20,11 +20,17 @@
 
 .footer--nav ul{
   display: flex;
-  gap: 20px;
+  width: 60%;
+ justify-content: space-around;
+}
+.footer--nav ul li{
+
+  font-size: 30px;
 }
 
 .footer--nav img{
   width: 100px;
+  margin-top: -40px;
 }
 .footer--nav h2{
   width: 100%;
@@ -35,8 +41,16 @@
 }
 
 .footer--nav p{
-  width: 100%;
+  width: 80%;
+  line-height: 20px;
  text-align: center;
+}
+.copyright{
+  width: 100%;
+  text-align: center;
+  padding: 10px; 
+  background-color: rgba(66, 11, 117, 0.616);
+  font-size: 17px;
 }
 
 @media (max-width: 1440px) {
