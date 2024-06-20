@@ -30,7 +30,7 @@
     margin-bottom: 20px;
     outline: none;
     border-radius: 5px ;
-    border: solid 2px #436c79 ;
+    border: none;
 }
 .suscríbete button{
     width: 100%;
@@ -43,12 +43,17 @@
     border-radius: 5px;
     outline: none;
     border: none;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
 }
 
 .suscríbete .form input:focus{
-    box-shadow: 5px 0px 10px #436c79;
+    box-shadow: 5px 5px 20px  #43065f;;
 }
 
+.suscríbete button:hover{
+    background-color: #c0bec0 ;
+}
 
 @media (max-width: 1250px) {
     .suscríbete{

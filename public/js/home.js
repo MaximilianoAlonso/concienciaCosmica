@@ -6,7 +6,7 @@ window.addEventListener("scroll", function (){
         if (position >= 600) {
             setTimeout(function() {
             item.classList.add('postEffectBefore'); 
-        }, index * 1000); 
+        }, index * 500); 
         }
         
     });

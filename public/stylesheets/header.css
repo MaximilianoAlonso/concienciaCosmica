@@ -1,5 +1,5 @@
 .header {
-  width: 80%;
+  width: 100%;
   max-width: 2000px;
   margin: 0 auto;
   padding:  0;
@@ -7,7 +7,9 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  background-color:  #e8e1ff;
+  background-color:  #e3a5e3;
+  z-index: 1;
+  
 }
 
 /* header logo */
@@ -28,7 +30,7 @@
 }
 
 .logo img {
-  width: 100px;
+  width: 80px;
 }
 
 /* header menu */
@@ -41,6 +43,7 @@
 .nav ul {
   display: inline-block;
   padding: 0 10px;
+  margin-top: 5px;
 }
 
 .nav ul li {
@@ -50,28 +53,38 @@
   cursor: pointer;
   font-size: 1rem;
   font-weight: 400;
+  z-index: 10;
+  padding:  15px;
 }
+
+.nav ul li a{
+  width: 100%;
+  
+}
+
 
 /* header sub menus */
 .nav .section,
 .nav .formations,
 .nav .resources {
   display: flex;
+  width: 180px;
   flex-direction: column;
   flex-wrap: wrap;
   visibility: hidden;
   position: absolute;
   top: 50px;
-  left: 0px;
+  left: 9px;
+  padding: 0;
   z-index: 10;
   transition: all 0.2s ease;
 }
 .nav .section li,
 .nav .formations li,
 .nav .resources li {
-  padding: 5px 10px;
+  padding: 5px ;
   width: 100%;
-  background-color: #e8e1ff;
+  background-color:  #d98cd9;
   z-index: 10;
 }
 
@@ -182,13 +195,13 @@
     display: flex;
     flex-direction: column;
     justify-content: start;
-    background-color:  #e8e1ff;
     position: absolute;
     top: -1100px;
     left: -350px;
     cursor: pointer;
     z-index: 10;
     border-radius: 100%;
+    background-color:  #e3a5e3;
     opacity: 0;
     transition: all 2s ease;
   }
@@ -227,7 +240,7 @@
   .nav .resources li {
     padding: 10px 10px;
     width: 100%;
-    background-color:  #e8e1ff;
+    background-color:  #e3a5e3;
     z-index: 10;
   }
 
@@ -247,7 +260,7 @@
     visibility: visible;
     padding: 25px;
     font-size: 1.5rem;
-    background-color:  #e8e1ff;
+    background-color:  #e3a5e3;
     outline: none;
     border: none;
     position: absolute;
@@ -268,7 +281,7 @@
     display: block;
     padding: 15px;
     font-size: 1.5rem;
-    background-color:  #e8e1ff;
+    background-color:  #e3a5e3;
     outline: none;
     border: none;
     cursor: pointer;

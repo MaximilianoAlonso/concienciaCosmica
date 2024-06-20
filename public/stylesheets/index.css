@@ -3,7 +3,7 @@
   margin: 0 auto;
   z-index: 0;
   max-width: 2000px;
- 
+  
 }
 
 /* BANNER */
@@ -22,12 +22,15 @@
   width: 100%;
   text-transform: uppercase;
   text-align: center;
-  font-size: 1.2rem;
-  font-weight: 100;
+  font-size: 1rem;
+  line-height: 2rem;
+  padding: 10px;
+  font-weight: 400;
   position: absolute;
-  top: 40%;
+  top: 35%;
   margin: 0 auto;
-  color: #fdfdfd;
+  color: #fff1ff;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 
@@ -41,12 +44,12 @@
   margin: 0 auto;
   padding: 70px 0;
   border-radius: 50px 10px 50px 10px;
-  background-color: #cec9f8;
+  background-color: #e3a5e3;
 }
 
 .bienvenida h2 {
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 400;
   margin: 0;
 }
@@ -82,6 +85,14 @@
 .post .item {
   width: 320px;
   padding: 10px;
+}
+
+.post .item button,
+.post .item2 button{
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  background-color:#d98cd9;
 }
 
 .post .item h4 {
@@ -126,14 +137,15 @@
   font-weight: 900;
 }
 
-.postEffect {
-  opacity: 0;
-  transition: all 0.5s;
+.postEffect{
+  visibility: hidden;
+  margin-top: 200px;
+  transition:  all 1s;
 
 }
-
-.postEffectBefore {
-  opacity: 1;
+.postEffectBefore{
+  visibility:visible;
+  margin-top: 0;
 }
 
 .post .item1 h3 {
@@ -149,7 +161,7 @@
   font-weight: 400px;
   background-color: #fdfdfd;
   position: absolute;
-  bottom: 14px;
+  bottom: 20px;
   right: 10px;
   padding: 5px 10px;
   background-color: #fdfdfd;
@@ -192,13 +204,14 @@
 .separador p {
   width: 100%;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 400;
+  color: #fdfdfd;
   position: absolute;
   text-transform: uppercase;
   top: 40%;
-
-
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* RESOURCES */
@@ -227,7 +240,7 @@
   padding: 10px;
   border-radius: 10px;
   margin: 10px auto;
-  background-color: #fdfdfd;
+  background-color: #fff1ff;
   color: #000000;
   outline: none;
   border: solid 2px #cec9f8 ;
@@ -236,7 +249,7 @@
 }
 
 .resources-home button:hover{
-  background-color: #cec9f8;
+  background-color: #e3a5e3;
 }
 
 @media screen and (max-width: 1250px) {
@@ -373,7 +386,8 @@
 
   .banner article p {
     font-size: 0.6rem;
-    top: 40%;
+    line-height: 1rem;
+    top: 20%;
   }
 
 
