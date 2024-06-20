@@ -5,8 +5,6 @@
 
   <body>
 
-
-    <a href="users">perfil</a>
     <%- include('./partials/header') %>
       <main class="home">
 
@@ -19,6 +17,7 @@
               Carl Gustav Jung
             </p>
             <img src="/images/banner.png" alt="">
+            
           </article>
 
         </section>
@@ -37,54 +36,67 @@
         </section>
 
         <!-- POST -->
-        <seection class="post">
+        <seection class="post postEffectContainer">
           <h2>últimos post</h2>
-          <article class="item2">
+
+          <!-- ITEM 1 -->
+          <article class="item2 postEffect" >
             <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              <br> Odit incidunt laboriosam
+               Odit incidunt laboriosam
             </h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor sint laudantium aut earum! Dicta, iure
               voluptatum! Tenetur porro neque vel illo delectus cum praesentium pariatur fugiat nesciunt beatae. Iure,
               magnam!</p>
             <button><a href="">Leer más</a></button>
           </article>
-          
-          <article class="item1">
+
+          <!-- ITEM 2 -->
+          <article class="item1 postEffect">
             <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              <br> Odit incidunt laboriosam
+               Odit incidunt laboriosam
             </h3>
-            <img src="" alt="image post">
+            <figure>
+              <img src="/images/temporales/3.jpg" alt="image post">
+            </figure>
             <a href="">+</a>
           </article>
-          <article class="item">
-          <figure>
-            <img src="" alt="image post">
-          </figure>
-              
-          
-    
+
+           <!-- ITEM  3 -->
+          <article class="item postEffect">
+            <figure>
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5jPXcSBDHvL0SOYJ-58qpbo9o2pjgzAOxQw&s" alt="image post">
+            </figure>
             <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              <br> Odit incidunt laboriosam
+              Odit incidunt laboriosam
             </h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor sint laudantium aut earum! Dicta, iure
               voluptatum! Tenetur porro neque vel illo delectus cum praesentium pariatur fugiat nesciunt beatae. Iure,
               magnam!</p>
             <button><a href="">Leer más</a></button>
           </article>
-          <article class="item">
-            <img src="" alt="image post">
+
+          <!-- ITEM 4 -->
+          <article class="item postEffect">
+            <figure>
+              <img src="/images/temporales/5.jpg" alt="image post">
+            </figure>
             <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              <br> Odit incidunt laboriosam
+               Odit incidunt laboriosam
             </h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor sint laudantium aut earum! Dicta, iure
               voluptatum! Tenetur porro neque vel illo delectus cum praesentium pariatur fugiat nesciunt beatae. Iure,
               magnam!</p>
               <button><a href="">Leer más</a></button>
           </article>
-          <article class="item">
-            <img src="" alt="image post">
+
+            <!-- ITEM 5 -->
+          <article class="item postEffect">
+            <figure>
+              <img src="https://institutodyn.com/wp-content/uploads/terapias-alternativas.jpg" alt="image post">
+            </figure>
+            
             <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              <br> Odit incidunt laboriosam
+               Odit incidunt laboriosam
             </h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor sint laudantium aut earum! Dicta, iure
               voluptatum! Tenetur porro neque vel illo delectus cum praesentium pariatur fugiat nesciunt beatae. Iure,
@@ -97,10 +109,10 @@
 
         <section class="separador">
           <article>
-            <img src="/images/separador.png" alt="separador">
             <p>“Camina como si estuvieras besando la tierra con sus pies.” <br>
               Thich Nhat Hanh
               </p>
+              <img src="/images/separador.png" alt="">
           </article>
         </section>
 
@@ -127,5 +139,5 @@
 
       <%- include('./partials/footer') %>
   </body>
-
+<script src="js/home.js"></script>
 </html>

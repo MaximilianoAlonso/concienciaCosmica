@@ -2,7 +2,7 @@
   width: 90%;
   max-width: 1500px;
   margin: 0 auto;
-  padding: 20px 10px;
+  padding: 20px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -16,6 +16,12 @@
   align-items: center;
   flex-wrap: wrap;
   width: 25%;
+}
+
+.logo h2{
+  font-family: var(--tipografiaLogo);
+  text-transform: uppercase;
+  font-weight: 100;
 }
 
 .logo img {
@@ -86,11 +92,12 @@
 
 @media (max-width: 1440px) {
   .header {
-    width: 90%;
+    width: 85%;
     max-width: 1200px;
-    padding: 0 20px;
+    padding: 20px 0;
   }
 
+  
   .logo {
     width: 20%;
   }
@@ -109,9 +116,9 @@
 }
 @media (max-width: 1280px) {
   .header {
-    width: 100%;
+    width: 90%;
     max-width: 1200px;
-    padding: 0 20px;
+    padding: 20px 0;
   }
 
   .logo {
@@ -123,28 +130,28 @@
   }
 
   .logo h2 {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
   .nav {
-    width: 75%;
+    width: 70%;
   }
 
   .nav ul li {
     font-size: 0.8rem;
   }
 }
-@media (max-width: 1023px) {
+@media (max-width: 1024px) {
   .header {
-    width: 100%;
+    width: 95%;
     max-width: 1200px;
-    padding: 0 20px;
-    flex-direction: column;
+    padding: 20px 0;
     gap: 15px;
+    flex-direction: column;
   }
 
   .logo {
-    width: 25%;
+    width: 100%;
     justify-content: center;
     gap: 3px;
   }
@@ -158,11 +165,13 @@
   }
 
   .nav {
+    justify-content: center;
     width: 100%;
   }
 
   .nav ul li {
     font-size: 0.8rem;
+    padding: 5px 15px;
   }
 }
 @media (max-width: 767px) {
@@ -270,6 +279,7 @@
     top:0;
     left: 0;
     cursor: pointer;
+    z-index: 10;
   }
 
   .nav.visible{
