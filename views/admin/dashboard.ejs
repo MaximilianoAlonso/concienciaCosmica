@@ -3,9 +3,369 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .container {
+            max-width: 1200px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Admin</h1>
+    <div class="container mt-5">
+        <h1 class="text-center pb-5">DASHBOARD</h1>
+        <ul class="nav nav-tabs" id="dashboardTabs">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#users">Usuarios</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#training">Formación</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#articles">Artículos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#products">Productos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#resources">Recursos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#subscribers">Suscriptores</a>
+            </li>
+        </ul>
+
+        <div class="tab-content">
+            <!-- Usuarios -->
+            <div id="users" class="tab-pane fade show active">
+                <a class="btn btn-success mt-3" href="/admin/createUser">CREAR +</a>
+                <table class="table table-striped mt-3">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Teléfono</th>
+                            <th>Email</th>
+                            <th>Productos</th>
+                            <th>Formación</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Juan</td>
+                            <td>Pérez</td>
+                            <td>555-1234</td>
+                            <td>juan@example.com</td>
+                            <td>Producto A</td>
+                            <td>Formación A</td>
+                            <td>
+                                <button class="btn btn-info btn-sm">Ver</button>
+                                <button class="btn btn-warning btn-sm">Modificar</button>
+                                <button class="btn btn-danger btn-sm">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>María</td>
+                            <td>García</td>
+                            <td>555-5678</td>
+                            <td>maria@example.com</td>
+                            <td>Producto B</td>
+                            <td>Formación B</td>
+                            <td>
+                                <button class="btn btn-info btn-sm">Ver</button>
+                                <button class="btn btn-warning btn-sm">Modificar</button>
+                                <button class="btn btn-danger btn-sm">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Carlos</td>
+                            <td>Martínez</td>
+                            <td>555-9101</td>
+                            <td>carlos@example.com</td>
+                            <td>Producto C</td>
+                            <td>Formación C</td>
+                            <td>
+                                <button class="btn btn-info btn-sm">Ver</button>
+                                <button class="btn btn-warning btn-sm">Modificar</button>
+                                <button class="btn btn-danger btn-sm">Eliminar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Formación -->
+            <div id="training" class="tab-pane fade">
+                <a class="btn btn-success mt-3" href="/admin/createCurse">CREAR +</a>
+                <table class="table table-striped mt-3">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Título</th>
+                            <th>Categoría</th>
+                            <th>Fecha</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Curso A</td>
+                            <td>Categoría 1</td>
+                            <td>2023-01-15</td>
+                            <td>
+                                <button class="btn btn-info btn-sm">Ver</button>
+                                <button class="btn btn-warning btn-sm">Modificar</button>
+                                <button class="btn btn-danger btn-sm">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Curso B</td>
+                            <td>Categoría 2</td>
+                            <td>2023-02-20</td>
+                            <td>
+                                <button class="btn btn-info btn-sm">Ver</button>
+                                <button class="btn btn-warning btn-sm">Modificar</button>
+                                <button class="btn btn-danger btn-sm">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Curso C</td>
+                            <td>Categoría 3</td>
+                            <td>2023-03-30</td>
+                            <td>
+                                <button class="btn btn-info btn-sm">Ver</button>
+                                <button class="btn btn-warning btn-sm">Modificar</button>
+                                <button class="btn btn-danger btn-sm">Eliminar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Artículos -->
+            <div id="articles" class="tab-pane fade">
+                <a class="btn btn-success mt-3" href="/admin/createArticle">CREAR +</a>
+                <table class="table table-striped mt-3">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Título</th>
+                            <th>Categoría</th>
+                            <th>Fecha</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Artículo A</td>
+                            <td>Categoría 1</td>
+                            <td>2023-04-10</td>
+                            <td>
+                                <button class="btn btn-info btn-sm">Ver</button>
+                                <button class="btn btn-warning btn-sm">Modificar</button>
+                                <button class="btn btn-danger btn-sm">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Artículo B</td>
+                            <td>Categoría 2</td>
+                            <td>2023-05-15</td>
+                            <td>
+                                <button class="btn btn-info btn-sm">Ver</button>
+                                <button class="btn btn-warning btn-sm">Modificar</button>
+                                <button class="btn btn-danger btn-sm">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Artículo C</td>
+                            <td>Categoría 3</td>
+                            <td>2023-06-20</td>
+                            <td>
+                                <button class="btn btn-info btn-sm">Ver</button>
+                                <button class="btn btn-warning btn-sm">Modificar</button>
+                                <button class="btn btn-danger btn-sm">Eliminar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Productos -->
+            <div id="products" class="tab-pane fade">
+                <a class="btn btn-success mt-3" href="/admin/createProduct">CREAR +</a>
+                <table class="table table-striped mt-3">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Título</th>
+                            <th>Categoría</th>
+                            <th>Precio</th>
+                            <th>Stock</th>
+                            <th>Fecha</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Producto A</td>
+                            <td>Categoría 1</td>
+                            <td>$10</td>
+                            <td>50</td>
+                            <td>2023-07-10</td>
+                            <td>
+                                <button class="btn btn-info btn-sm">Ver</button>
+                                <button class="btn btn-warning btn-sm">Modificar</button>
+                                <button class="btn btn-danger btn-sm">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Producto B</td>
+                            <td>Categoría 2</td>
+                            <td>$20</td>
+                            <td>30</td>
+                            <td>2023-08-15</td>
+                            <td>
+                                <button class="btn btn-info btn-sm">Ver</button>
+                                <button class="btn btn-warning btn-sm">Modificar</button>
+                                <button class="btn btn-danger btn-sm">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Producto C</td>
+                            <td>Categoría 3</td>
+                            <td>$30</td>
+                            <td>20</td>
+                            <td>2023-09-20</td>
+                            <td>
+                                <button class="btn btn-info btn-sm">Ver</button>
+                                <button class="btn btn-warning btn-sm">Modificar</button>
+                                <button class="btn btn-danger btn-sm">Eliminar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Recursos -->
+            <div id="resources" class="tab-pane fade">
+                <a class="btn btn-success mt-3" href="/admin/createResource">CREAR +</a>
+                <table class="table table-striped mt-3">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Título</th>
+                            <th>Tipo de Recurso</th>
+                            <th>Fecha</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Recurso A</td>
+                            <td>Tipo 1</td>
+                            <td>2023-10-01</td>
+                            <td>
+                                <button class="btn btn-info btn-sm">Ver</button>
+                                <button class="btn btn-warning btn-sm">Modificar</button>
+                                <button class="btn btn-danger btn-sm">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Recurso B</td>
+                            <td>Tipo 2</td>
+                            <td>2023-11-05</td>
+                            <td>
+                                <button class="btn btn-info btn-sm">Ver</button>
+                                <button class="btn btn-warning btn-sm">Modificar</button>
+                                <button class="btn btn-danger btn-sm">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Recurso C</td>
+                            <td>Tipo 3</td>
+                            <td>2023-12-10</td>
+                            <td>
+                                <button class="btn btn-info btn-sm">Ver</button>
+                                <button class="btn btn-warning btn-sm">Modificar</button>
+                                <button class="btn btn-danger btn-sm">Eliminar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Suscriptores -->
+            <div id="subscribers" class="tab-pane fade">
+                <a class="btn btn-success mt-3" href="/admin/createSubscriber">CREAR +</a>
+                <table class="table table-striped mt-3">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre</th>
+                            <th>Email</th>
+                            <th>Fecha</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Ana</td>
+                            <td>ana@example.com</td>
+                            <td>2023-01-05</td>
+                            <td>
+                                <button class="btn btn-info btn-sm">Ver</button>
+                                <button class="btn btn-warning btn-sm">Modificar</button>
+                                <button class="btn btn-danger btn-sm">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Pedro</td>
+                            <td>pedro@example.com</td>
+                            <td>2023-02-10</td>
+                            <td>
+                                <button class="btn btn-info btn-sm">Ver</button>
+                                <button class="btn btn-warning btn-sm">Modificar</button>
+                                <button class="btn btn-danger btn-sm">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Lucía</td>
+                            <td>lucia@example.com</td>
+                            <td>2023-03-15</td>
+                            <td>
+                                <button class="btn btn-info btn-sm">Ver</button>
+                                <button class="btn btn-warning btn-sm">Modificar</button>
+                                <button class="btn btn-danger btn-sm">Eliminar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
