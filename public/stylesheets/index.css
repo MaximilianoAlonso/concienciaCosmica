@@ -135,12 +135,14 @@
   font-weight: 900 ;
 }
 .postEffect{
-  opacity: 0;
-  transition:  all 0.5s;
+  visibility: hidden;
+  margin-top: 200px;
+  transition:  all 1s;
 
 }
 .postEffectBefore{
-opacity: 1 ;
+  visibility:visible;
+  margin-top: 0;
 }
 
 .post .item1 h3 {

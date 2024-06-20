@@ -45,10 +45,10 @@
                             <th>ID</th>
                             <th>Nombre</th>
                             <th>Apellido</th>
-                            <th>Teléfono</th>
-                            <th>Email</th>
-                            <th>Productos</th>
+                            <th>Correo</th>
                             <th>Formación</th>
+                            <th>Finalización</th>
+                            <th>Clave de acceso</th>
                             <th>Acciones</th>
                         </tr>
                     </thead>
@@ -57,10 +57,10 @@
                             <td>1</td>
                             <td>Juan</td>
                             <td>Pérez</td>
-                            <td>555-1234</td>
                             <td>juan@example.com</td>
-                            <td>Producto A</td>
-                            <td>Formación A</td>
+                            <td>Reiki I</td>
+                            <td>2024-06-20</td>
+                            <td>********</td>
                             <td>
                                 <button class="btn btn-info btn-sm">Ver</button>
                                 <button class="btn btn-warning btn-sm">Modificar</button>
@@ -71,10 +71,10 @@
                             <td>2</td>
                             <td>María</td>
                             <td>García</td>
-                            <td>555-5678</td>
                             <td>maria@example.com</td>
-                            <td>Producto B</td>
-                            <td>Formación B</td>
+                            <td>Constelaciones Familiares</td>
+                            <td>2024-07-15</td>
+                            <td>********</td>
                             <td>
                                 <button class="btn btn-info btn-sm">Ver</button>
                                 <button class="btn btn-warning btn-sm">Modificar</button>
@@ -85,10 +85,10 @@
                             <td>3</td>
                             <td>Carlos</td>
                             <td>Martínez</td>
-                            <td>555-9101</td>
                             <td>carlos@example.com</td>
-                            <td>Producto C</td>
-                            <td>Formación C</td>
+                            <td>Tarot</td>
+                            <td>2024-08-10</td>
+                            <td>********</td>
                             <td>
                                 <button class="btn btn-info btn-sm">Ver</button>
                                 <button class="btn btn-warning btn-sm">Modificar</button>
@@ -96,6 +96,7 @@
                             </td>
                         </tr>
                     </tbody>
+                    
                 </table>
             </div>
 
@@ -313,15 +314,15 @@
 
             <!-- Suscriptores -->
             <div id="subscribers" class="tab-pane fade">
-                <a class="btn btn-success mt-3" href="/admin/createSubscriber">CREAR +</a>
+                <a class="btn btn-success mt-3" href="#" id="downloadList">Bajar Listado</a>
                 <table class="table table-striped mt-3">
                     <thead>
                         <tr>
                             <th>ID</th>
                             <th>Nombre</th>
-                            <th>Email</th>
+                            <th>Correo</th>
                             <th>Fecha</th>
-                            <th>Acciones</th>
+                
                         </tr>
                     </thead>
                     <tbody>
@@ -330,33 +331,21 @@
                             <td>Ana</td>
                             <td>ana@example.com</td>
                             <td>2023-01-05</td>
-                            <td>
-                                <button class="btn btn-info btn-sm">Ver</button>
-                                <button class="btn btn-warning btn-sm">Modificar</button>
-                                <button class="btn btn-danger btn-sm">Eliminar</button>
-                            </td>
+                           
                         </tr>
                         <tr>
                             <td>2</td>
                             <td>Pedro</td>
                             <td>pedro@example.com</td>
                             <td>2023-02-10</td>
-                            <td>
-                                <button class="btn btn-info btn-sm">Ver</button>
-                                <button class="btn btn-warning btn-sm">Modificar</button>
-                                <button class="btn btn-danger btn-sm">Eliminar</button>
-                            </td>
+                           
                         </tr>
                         <tr>
                             <td>3</td>
                             <td>Lucía</td>
                             <td>lucia@example.com</td>
                             <td>2023-03-15</td>
-                            <td>
-                                <button class="btn btn-info btn-sm">Ver</button>
-                                <button class="btn btn-warning btn-sm">Modificar</button>
-                                <button class="btn btn-danger btn-sm">Eliminar</button>
-                            </td>
+                          
                         </tr>
                     </tbody>
                 </table>
@@ -367,5 +356,34 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ 
+    <script>
+        document.getElementById('downloadList').addEventListener('click', function() {
+            var emails = [];
+            var table = document.getElementById('subscribers').getElementsByTagName('table')[0];
+            var rows = table.getElementsByTagName('tr');
+            for (var i = 1; i < rows.length; i++) { // Start from 1 to skip the header row
+                var cells = rows[i].getElementsByTagName('td');
+                var email = cells[2].innerText.trim();
+                emails.push(email + ',');
+            }
+    
+            var data = emails.join('\n');
+    
+            var blob = new Blob([data], { type: 'text/plain' });
+            var link = document.createElement('a');
+            link.download = 'emails_suscriptores.txt';
+            link.href = window.URL.createObjectURL(blob);
+            link.click();
+        });
+    </script>
+   
+    
+    
+    
+    
+    
+    
+    
 </body>
 </html>
