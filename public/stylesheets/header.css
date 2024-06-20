@@ -1,12 +1,13 @@
 .header {
-  width: 90%;
-  max-width: 1500px;
+  width: 80%;
+  max-width: 2000px;
   margin: 0 auto;
-  padding: 20px 0;
+  padding:  0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  background-color:  #e8e1ff;
 }
 
 /* header logo */
@@ -15,22 +16,24 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  width: 25%;
+  width: 30%;
 }
 
 .logo h2{
   font-family: var(--tipografiaLogo);
   text-transform: uppercase;
   font-weight: 100;
+  font-size: 1.5rem;
+  
 }
 
 .logo img {
-  width: 50px;
+  width: 100px;
 }
 
 /* header menu */
 .nav {
-  width: 70%;
+  width: 60%;
   display: flex;
   justify-content: end;
 }
@@ -41,10 +44,12 @@
 }
 
 .nav ul li {
-  padding: 5px 20px;
+  padding: 5px 5px;
   position: relative;
   float: left;
   cursor: pointer;
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 /* header sub menus */
@@ -66,7 +71,7 @@
 .nav .resources li {
   padding: 5px 10px;
   width: 100%;
-  background-color: #ffffff;
+  background-color: #e8e1ff;
   z-index: 10;
 }
 
@@ -76,9 +81,6 @@
   visibility: visible;
   top: 30px;
 }
-
-
-
 
 /* header menu bar */
 
@@ -90,91 +92,64 @@
   display: none;
 }
 
-@media (max-width: 1440px) {
-  .header {
-    width: 85%;
-    max-width: 1200px;
-    padding: 20px 0;
+
+@media screen and (max-width: 1250px)  {
+  /* header  */
+
+  .header .nav ul{
+    padding: 0;
   }
 
-  
-  .logo {
-    width: 20%;
-  }
-
-  .logo img {
-    width: 40px;
-  }
-
-  .logo h2 {
-    font-size: 1rem;
-  }
-
-  .nav {
-    width: 75%;
-  }
-}
-@media (max-width: 1280px) {
-  .header {
-    width: 90%;
-    max-width: 1200px;
-    padding: 20px 0;
-  }
-
-  .logo {
-    width: 20%;
-  }
-
-  .logo img {
-    width: 40px;
-  }
-
-  .logo h2 {
-    font-size: 1rem;
-  }
-
-  .nav {
-    width: 70%;
-  }
-
-  .nav ul li {
+  .header ul li{
     font-size: 0.8rem;
   }
+
+  .header .logo{
+    width: 32%;
+  }
+
+  .header .logo img{
+    width: 70px;
+  }
+  .header .logo h2{
+    font-size: 1.3rem;
+  }
 }
-@media (max-width: 1024px) {
-  .header {
-    width: 95%;
-    max-width: 1200px;
-    padding: 20px 0;
-    gap: 15px;
+@media screen and (max-width: 1023px)  {
+  /* header  */
+
+  .header{
     flex-direction: column;
   }
 
-  .logo {
+  .header .nav{
     width: 100%;
     justify-content: center;
-    gap: 3px;
+    padding: 5px;
   }
 
-  .logo img {
-    width: 40px;
+  .header .nav ul{
+    padding: 0;
   }
 
-  .logo h2 {
-    font-size: 1rem;
-  }
-
-  .nav {
-    justify-content: center;
-    width: 100%;
-  }
-
-  .nav ul li {
+  .header ul li{
     font-size: 0.8rem;
-    padding: 5px 15px;
+  }
+
+  .header .logo{
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .header .logo img{
+    width: 70px;
+  }
+  .header .logo h2{
+    font-size: 1.3rem;
   }
 }
-@media (max-width: 767px) {
+
+@media screen and (max-width: 767px) {
   .header {
     width: 100%;
     max-width: 1500px;
@@ -203,11 +178,11 @@
   /* header menu */
   .nav {
     width: 350px;
-    height: 800px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: start;
-    background-color: #b1a8bd;
+    background-color:  #e8e1ff;
     position: absolute;
     top: -1100px;
     left: -350px;
@@ -252,7 +227,7 @@
   .nav .resources li {
     padding: 10px 10px;
     width: 100%;
-    background-color: #fdfdfd;
+    background-color:  #e8e1ff;
     z-index: 10;
   }
 
@@ -272,7 +247,7 @@
     visibility: visible;
     padding: 25px;
     font-size: 1.5rem;
-    background-color: #fdfdfd;
+    background-color:  #e8e1ff;
     outline: none;
     border: none;
     position: absolute;
@@ -293,7 +268,7 @@
     display: block;
     padding: 15px;
     font-size: 1.5rem;
-    background-color: #b1a8bd;
+    background-color:  #e8e1ff;
     outline: none;
     border: none;
     cursor: pointer;
