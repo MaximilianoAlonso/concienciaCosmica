@@ -6,6 +6,8 @@ font-family: 'Manjari', sans-serif;
 :root{
   --tipografiaLogo: 'Gidole', sans-serif;
   --tipografiaMenues: 'Manjari', sans-serif;
+  --colorBotones: #d98cd9;
+  --colorFondoSecciones: #e8e1ff
 }
 
 * {
@@ -16,7 +18,9 @@ font-family: 'Manjari', sans-serif;
 
 body{
   font-family: var(--tipografiaMenues);
-  background-color: #e8e1ff;
+  background-color: #fdfdfd;
+  max-width: 2000px;
+  margin: 0 auto;
 }
 
 li {
@@ -26,9 +30,17 @@ li {
 
 a{
     text-decoration: none;
-    color: #131d20;
     text-transform: uppercase;
-  
+}
+
+button{
+  text-transform: uppercase;
+  font-family: var(--tipografiaMenues);
+}
+
+h2,h3{
+  font-family: var(--tipografiaLogo);
+  font-weight: 300;
 }
 
 

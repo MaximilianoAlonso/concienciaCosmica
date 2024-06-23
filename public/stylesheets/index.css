@@ -1,449 +1,508 @@
-.home {
-  width: 100%;
-  margin: 0 auto;
-  z-index: 0;
-  max-width: 2000px;
- 
+/* MAIN */
+
+.inicio {
+    width: 100%;
+    margin: 0;
 }
 
 /* BANNER */
-.banner {
-  width: 77%;
-  position: relative;
-  margin: 0 auto;
-  margin-bottom: 100px;
+
+.inicio .banner {
+    width: 100%;
+    position: relative;
+    z-index: 0;
 }
 
-.banner img {
-  width: 100%;
+.inicio .banner figure {
+    width: 100%;
+    line-height: 0;
+    background-color: var(--colorFondoSecciones);
 }
 
-.banner article p {
-  width: 100%;
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 1.2rem;
-  font-weight: 100;
-  position: absolute;
-  top: 40%;
-  margin: 0 auto;
-  color: #fdfdfd;
+.inicio .banner figure video {
+    width: 100%;
+    height: auto;
 }
 
 
-
-/* TEXTO BIENVENIDA */
-
-.bienvenida {
-  width: 77%;
-  height: 350px;
-  text-align: center;
-  margin: 0 auto;
-  padding: 70px 0;
-  border-radius: 50px 10px 50px 10px;
-  background-color: #cec9f8;
-}
-
-.bienvenida h2 {
-  text-transform: uppercase;
-  font-size: 2rem;
-  font-weight: 400;
-  margin: 0;
-}
-
-.bienvenida p {
-  font-size: 1rem;
-  line-height: 2rem;
-  margin-top: 20px;
-}
-
-/* POST */
-
-.post {
-  width: 80%;
-  max-width: 1000px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 50px auto;
-  padding: 20px;
-}
-
-.post h2 {
-  width: 100%;
-  font-size: 2rem;
-  font-weight: 400;
-  margin: 20px 0;
-  text-transform: uppercase;
-  text-align: center;
-  letter-spacing: 2px;
-}
-
-.post .item {
-  width: 320px;
-  padding: 10px;
-}
-
-.post .item h4 {
-  margin-bottom: 10px;
-}
-
-.post .item p {
-  margin-bottom: 10px;
-  color: lightslategrey;
+.img-banner{
+    display: none;
 }
 
 
 
-.post .item img {
-  display: block;
-  width: 100%;
-  margin-bottom: 20px;
-  background-color: saddlebrown;
+.inicio .banner .slogan {
+    width: 100%;
+    position: absolute;
+    top: 35%;
+    text-align: center;
+    color: #fdfdfd;
+    font-size: 0.8rem;
+    padding: 10px 0;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
-.post .item1 {
-  width: 640px;
-  position: relative;
-  padding: 10px;
+
+/* WELCOME */
+
+.inicio .welcome {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: var(--colorFondoSecciones);
 }
 
-.post figure {
-  overflow: hidden;
-  width: 100%;
-  height: 200px;
+.img-welcome {
+    display: none;
+}
+
+.welcome h2 {
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+.welcome p {
+    line-height: 1.5rem;
+}
+
+
+/* CURSOS */
+
+.inicio .cursos {
+    margin: 50px auto;
 
 }
 
-.post figure img {
-  width: 100%;
-  height: auto
+/* CURSOS INFO */
+.cursos--info {
+    padding: 20px;
 }
 
-.post .item h4 {
-  width: 100%;
-  margin-top: 10px;
-  font-weight: 900;
+.cursos--info h3 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: var(--colorBotones);
 }
 
-.postEffect {
-  opacity: 0;
-  transition: all 0.5s;
+.cursos--info h2 {
+    font-weight: 300;
+    margin: 20px 0;
+}
+
+.cursos--info .button--info {
+    margin-top: 20px;
+    padding: 15px 10px 10px;
+    border-radius: 10px;
+    border: solid 1px #fdfdfd;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #fdfdfd;
+    text-align: center;
+    background-color: var(--colorBotones);
+}
+
+/* CURSO TARJETAS */
+
+.cursos--caja {
+    width: 320px;
+    border: solid 2px var(--colorBotones);
+    padding: 10px 5px;
+    border-radius: 5px;
+    margin: 40px auto;
+    position: relative;
+    background-color: var(--colorFondoSecciones);
+}
+
+.cursos--caja figure {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.cursos--caja figure img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    padding-bottom: 10px;
+}
+
+
+.cursos--caja .gratuito {
+    padding: 15px 10px 10px;
+    border-radius: 10px;
+    border: solid 1px #fdfdfd;
+    outline: none;
+    color: #fdfdfd;
+    background-color: var(--colorBotones);
+    position: absolute;
+    top: 15px;
+    right: 12px;
+}
+
+.cursos--caja .caja-description {
+    padding: 10px 5px;
+}
+
+/* YOUTUBE CANAL */
+
+.youtube {
+    width: 100%;
+    margin: 50px auto;
+    background-color: #fdfdfd;
+}
+
+.youtube-info {
+    text-align: center;
+    padding: 20px;
+}
+
+.youtube-info h3 {
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: var(--colorBotones);
+}
+
+.youtube-info h2 {
+    font-weight: 300;
+    margin: 20px 0;
+}
+
+.youtube-info p {
+    margin-bottom: 20px;
+}
+
+.youtube-info button {
+    padding: 12px;
+    display: inline;
+    border: solid 2px var(--colorFondoSecciones);
+    border-radius: 10px;
+    background-color: #fdfdfd;
+    transition: all 1.5s ease-in-out;
+}
+
+.youtube-info button div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.youtube-info button div a {
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #000000;
+    margin-block-start: auto;
+    transition: all 1.5s ease-in-out;
+}
+
+.youtube-info button div i {
+    font-size: 1.5rem;
+    color: red;
 
 }
 
-.postEffectBefore {
-  opacity: 1;
+.youtube-info button:hover {
+    border: solid 2px var(--colorBotones);
 }
 
-.post .item1 h3 {
-  width: 70%;
-  position: absolute;
-  top: 30px;
-  padding: 10px 15px;
-  background-color: rgba(255, 255, 255, 0.9);
+
+/* YOU TUBE TARJETAS */
+
+.youtube-video {
+    width: 320px;
+    margin: 0 auto;
 }
 
-.post .item1 a {
-  font-size: 2rem;
-  font-weight: 400px;
-  background-color: #fdfdfd;
-  position: absolute;
-  bottom: 14px;
-  right: 10px;
-  padding: 5px 10px;
-  background-color: #fdfdfd;
+.youtube-video figure {
+    width: 100%;
+    margin: 10px 0;
 }
 
-.post .item2 {
-  width: 320px;
-  text-align: center;
-  padding: 10px;
-  margin-top: 10px;
-}
-
-.post .item2 h4 {
-  margin-bottom: 10px;
-}
-
-.post .item2 p {
-  margin-bottom: 10px;
-  color: lightslategrey;
-}
-
-.post button {
-  padding: 5px;
-  background-color: #fdfdfd;
+.youtube-video figure img {
+    width: 100%;
+    border-radius: 15px;
 }
 
 /* SEPARADOR */
 
 .separador {
-  width: 77%;
-  position: relative;
-  margin: 100px auto;
-}
-
-.separador img {
-  width: 100%;
-  height: 300px;
+    width: 100%;
+    height: 100px;
+    margin: 50px auto;
+    position: relative;
+    background-color: var(--colorFondoSecciones);
 }
 
 .separador p {
-  width: 100%;
-  text-align: center;
-  font-size: 1.5rem;
-  font-weight: 400;
-  position: absolute;
-  text-transform: uppercase;
-  top: 40%;
-
-
-}
-
-/* RESOURCES */
-
-.resources-home {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 50px;
-  margin: 100px auto;
-
-}
-
-.resources-home img {
-  display: block;
-  background-color: bisque;
-  width: 200px;
-  height: 200px;
-  border: solid 3px #cec9f8;
-  border-radius: 10px;
-}
-
-.resources-home button {
-  display: block;
-  width: 50%;
-  padding: 10px;
-  border-radius: 10px;
-  margin: 10px auto;
-  background-color: #fdfdfd;
-  color: #000000;
-  outline: none;
-  border: solid 2px #cec9f8 ;
-  text-transform: uppercase;
-  transition: background-color 0.5s ease-in-out;
-}
-
-.resources-home button:hover{
-  background-color: #cec9f8;
-}
-
-@media screen and (max-width: 1250px) {
-
-  .home {
     width: 100%;
-    margin: 0 auto;
-    z-index: 0;
-    max-width: 2000px;
-  }
+    text-align: center;
+    padding: 30px 5px;
+}
 
-  /* BANNER */
+/* RESOURCES INFO */
 
-  .banner {
-    width: 80%;
-  }
-
-  .banner article p {
-    font-size: 1.1rem;
-    top: 40%;
-  }
+.resources-home-info {
+    padding: 20px;
+}
 
 
-  /* TEXTO BIENVENIDA */
-
-  .bienvenida{
-    width: 80%;
-  }
-
-  .bienvenida h2 {
-    font-size: 1.5rem;
-  }
-
-  .bienvenida p {
+.resources-home-info h3 {
     font-size: 1rem;
-    line-height: 2rem;
-  }
-
-  .post{
-    width: 100%;
-    
-  }
-
-  .post .item{
-    width: 290px;
-  }
-
-  .post .item1{
-    width: 590px;
-  }
-
-  .post .item1 a {
-    font-size: 1.5rem;
-    bottom: 52px;
-  }  
-
-  .post .item2{
-    width: 290px;
-    padding: 0;
-  }
-
+    text-transform: uppercase;
+    color: var(--colorBotones);
 }
-@media screen and (max-width: 1023px) {
 
-  .home {
-    width: 100%;
-    margin: 0 auto;
-    z-index: 0;
-    max-width: 2000px;
-  }
-
-  /* BANNER */
-
-  .banner {
-    width: 80%;
-  }
-
-  .banner article p {
-    font-size: 0.8rem;
-    top: 40%;
-  }
-
-
-  /* TEXTO BIENVENIDA */
-
-  .bienvenida{
-    width: 80%;
-  }
-
-  .bienvenida h2 {
-    font-size: 1.5rem;
-  }
-
-  .bienvenida p {
-    font-size: 1rem;
-    line-height: 2rem;
-  }
-
-  .post h2{
-    font-size: 1.5rem;
-  }
-
-  .post .item:last-child{
-    display: none;
-  }
-
-  .post .item1{
-    display: none;
-    width: 590px;
-  }
-
-  .post .item2{
-    display: none;
-    width: 290px;
-    padding: 0;
-  }
-
+.resources-home-info h2 {
+    font-weight: 300;
+    margin: 20px 0;
 }
-@media screen and (max-width: 767px) {
 
-  .home {
-    width: 100%;
-    margin: 0 auto;
-    z-index: 0;
-    padding: 0 5px;
-    max-width: 2000px;
-  }
-
-  /* BANNER */
-
-  .banner {
-    width: 100%;
-  }
-
-  .banner article p {
-    font-size: 0.6rem;
-    top: 40%;
-  }
-
-
-  /* TEXTO BIENVENIDA */
-
-  .bienvenida{
-    width: 100%;
-    height: 400px;
-    padding: 70px 10px;
-  }
-
-  .bienvenida h2 {
-    font-size: 1.5rem;
-  }
-
-  .bienvenida p {
+.resources-home-info .button--info {
+    margin-top: 20px;
+    padding: 15px 10px 10px;
+    border-radius: 10px;
+    border: solid 1px #fdfdfd;
+    font-weight: 400;
     font-size: 1rem;
-    line-height: 2rem;
-  }
+    color: #fdfdfd;
+    text-align: center;
+    background-color: var(--colorBotones);
+}
 
-  /* POST */
-
-  .home .post{
-    width: 100%;
-  }
-
-  .post h2{
-    font-size: 1.5rem;
-  }
-
-  .home .post .item{
-    width: 100%;
-  }
-
-  .post .item:last-child{
-    display: block;
-  }
-
-  .post .item1{
-    display: block;
-    width: 100%;
-  }
-
-  .post .item1 a {
-    font-size: 2rem;
-    font-weight: 400px;
-    background-color: #fdfdfd;
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    padding: 5px 10px;
-    background-color: #fdfdfd;
-  }
-
-  .post .item2{
-    display: block;
-    width: 100%;
-    padding: 0;
-  }
-
-  .separador {
-    width: 100%;
-    position: relative;
-    margin: 100px auto;
-  }
-
-  .resources-home{
-    width: 100%;
+.resources-home1 {
+    display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-  }
+    flex-wrap: wrap;
+    gap: 50px;
+    margin: 100px auto;
 
+}
+
+.resources-home1 img {
+    display: block;
+    background-color: bisque;
+    width: 300px;
+    height: 300px;
+    border: solid 3px #436c79;
+    border-radius: 10px;
+}
+
+.resources-home1 button {
+    display: block;
+    width: 30%;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px auto;
+    background-color: var(--colorBotones);
+    color: #fdfdfd;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+
+    /* BANNER */
+
+    .img-banner {
+        display: none;
+    }
+
+    .video-banner {
+        display: block;
+    }
+
+    .inicio .banner figure {
+        width: 100%;
+        background-color: var(--colorFondoSecciones);
+    }
+
+    .inicio .banner figure video {
+        width: 100%;
+        height: auto;
+    }
+
+    .inicio .banner .slogan {
+        font-size: 1rem;
+    }
+
+    /* CURSOS INFO */
+    .cursos--info {
+        width: 80%;
+        padding: 20px;
+    }
+
+    /* YOU TUBE TARJETAS */
+
+    .youtube-video {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    /* SEPARADOR */
+
+    .separador {
+        width: 100%;
+        height: 100px;
+        margin: 50px auto;
+        position: relative;
+        background-color: var(--colorFondoSecciones);
+    }
+
+    /* RESOURCE */
+
+    .resources-home-info {
+        width: 80%;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+
+    /* BANNER */
+
+    .img-banner {
+        display: none;
+    }
+
+    .video-banner {
+        display: block;
+    }
+
+    .inicio .banner figure {
+        width: 100%;
+        background-color: #fdfdfd;
+    }
+
+    .inicio .banner figure video {
+        width: 100%;
+
+    }
+
+    .inicio .banner .slogan {
+        font-size: 1.3rem;
+    }
+
+    /* WELCOME */
+
+    .inicio .welcome {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        background-color: #fdfdfd;
+        position: relative;
+    }
+
+    .img-welcome {
+        display: block;
+        width: 100%;
+
+    }
+
+    .img-welcome img {
+        width: 100%;
+
+    }
+
+    .welcome-text {
+        width: 700px;
+        height: 400px;
+        position: absolute;
+        top: 50px;
+        right: 30px;
+        border-radius: 5px;
+        padding: 50px 20px;
+        font-size: 1.1rem;
+        text-shadow: 0 0 2px #fdfdfd;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .welcome h2 {
+        text-transform: uppercase;
+        margin-bottom: 30px;
+        font-size: 2rem;
+    }
+
+    .welcome p {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+
+
+
+    /* CURSOS */
+
+    .inicio .cursos {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 50px auto;
+        background-color: var(--colorFondoSecciones);
+    }
+
+    /* CURSOS INFO */
+    .cursos--info {
+        width: 40%;
+        padding: 20px;
+    }
+
+    .cursos--info h3 {
+        font-size: 1.5rem;
+    }
+
+    /* YOU TUBE INFO */
+
+    .youtube-info h3{
+        font-size: 1.5rem;
+    }
+
+    /* YOU TUBE TARJETAS */
+
+    .youtube {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .youtube-info {
+        width: 100%;
+    }
+
+    .youtube-video {
+        width: 30%;
+        margin: 0 auto;
+    }
+
+    /* SEPARADOR */
+
+    .separador {
+        width: 100%;
+        height: 300px;
+        margin: 50px auto;
+        padding: 100px 0;
+        position: relative;
+        background-color: var(--colorFondoSecciones);
+    }
+
+    .separador p{
+        font-size: 1.3rem;
+    }
+
+    /* RESOURCE */
+
+    .resources-home {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .resources-home-info {
+        width: 40%;
+    }
+
+    .resources-home-info h3 {
+        font-size: 1.5rem;
+    }
 }

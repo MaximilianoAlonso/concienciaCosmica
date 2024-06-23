@@ -6,43 +6,49 @@
   <body>
 
     <%- include('./partials/header') %>
-      <main class="home">
 
-        <!-- BANNER -->
-
+      <main class="inicio">
         <section class="banner">
-          <article>
-            <p>“Tu visión se volverá más clara cuando mires dentro de tu propio corazón. <br> Quien mira hacia afuera,
-              sueña. Quien mira hacia adentro, despierta.” <br>
-              Carl Gustav Jung
-            </p>
-            <img src="/images/banner.png" alt="">
-            
-          </article>
-
+          <p class="slogan">“Tu visión se volverá más clara cuando mires dentro de tu propio corazón. <br> Quien mira
+            hacia
+            afuera, sueña. Quien mira hacia adentro, despierta.” <br>
+            Carl Gustav Jung </p>
+          <figure class="img-banner">
+            <img src="/images/imagen4.jpg" alt="">
+          </figure>
+          <figure class="video-banner">
+            <video src="/images/temporales/58143-487508533_medium.mp4" autoplay muted></video>
+          </figure>
         </section>
 
-        <!-- BIENVENIDA -->
-
-        <section class="bienvenida">
-          <article>
-            <h2>un placer tenerte aqui</h2>
-            <p>Bienvenidos a nuestro espacio. <br>
-              En Consciencia Cósmica abordamos y concebimos a cada ser desde una <br>
-              perspertiva holística. Utilizando herramientas como la astrología, la meditación y<br>
-              las terapias complementarias, fomentamos procesos de sanación conscientes,<br>
-              responsables y voluntarios</p>
-          </article>
+        <section class="welcome">
+          <div class="welcome-text">
+          <h2>un placer tenerte aqui</h2>
+          <p>Bienvenidos a nuestro espacio. 
+            En Consciencia Cósmica abordamos y concebimos a cada ser desde una <br>
+            perspertiva holística. Utilizando herramientas como la astrología, la meditación y<br>
+            las terapias complementarias, fomentamos procesos de sanación conscientes,<br>
+            responsables y voluntarios</p>
+            </div>
+            <figure class="img-welcome">
+              <img src="/images/imagen4.jpg" alt="">
+            </figure>
+        </section>
+        <section class="post--carrucel">
+          <%- include('./partials/carruceles/postCarrucel') %>
         </section>
 
-        <!-- POST -->
+
         <seection class="post postEffectContainer">
+
           <h2>últimos post</h2>
 
+
+
           <!-- ITEM 1 -->
-          <article class="item2 postEffect" >
+          <article class="item2 postEffect">
             <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-               Odit incidunt laboriosam
+              Odit incidunt laboriosam
             </h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor sint laudantium aut earum! Dicta, iure
               voluptatum! Tenetur porro neque vel illo delectus cum praesentium pariatur fugiat nesciunt beatae. Iure,
@@ -53,7 +59,7 @@
           <!-- ITEM 2 -->
           <article class="item1 postEffect">
             <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-               Odit incidunt laboriosam
+              Odit incidunt laboriosam
             </h3>
             <figure>
               <img src="/images/temporales/3.jpg" alt="image post">
@@ -61,10 +67,11 @@
             <a href="">+</a>
           </article>
 
-           <!-- ITEM  3 -->
+          <!-- ITEM  3 -->
           <article class="item postEffect">
             <figure>
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5jPXcSBDHvL0SOYJ-58qpbo9o2pjgzAOxQw&s" alt="image post">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5jPXcSBDHvL0SOYJ-58qpbo9o2pjgzAOxQw&s"
+                alt="image post">
             </figure>
             <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Odit incidunt laboriosam
@@ -81,29 +88,80 @@
               <img src="/images/temporales/5.jpg" alt="image post">
             </figure>
             <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-               Odit incidunt laboriosam
+              Odit incidunt laboriosam
             </h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor sint laudantium aut earum! Dicta, iure
               voluptatum! Tenetur porro neque vel illo delectus cum praesentium pariatur fugiat nesciunt beatae. Iure,
               magnam!</p>
-              <button><a href="">Leer más</a></button>
+            <button><a href="">Leer más</a></button>
           </article>
 
-            <!-- ITEM 5 -->
+          <!-- ITEM 5 -->
           <article class="item postEffect">
             <figure>
               <img src="https://institutodyn.com/wp-content/uploads/terapias-alternativas.jpg" alt="image post">
             </figure>
-            
+
             <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-               Odit incidunt laboriosam
+              Odit incidunt laboriosam
             </h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor sint laudantium aut earum! Dicta, iure
               voluptatum! Tenetur porro neque vel illo delectus cum praesentium pariatur fugiat nesciunt beatae. Iure,
               magnam!</p>
-              <button><a href="">Leer más</a></button>
+            <button><a href="">Leer más</a></button>
           </article>
         </seection>
+
+        <!-- CURSOS -->
+
+        <section class="cursos">
+
+          <article class="cursos--info">
+            <h3>cursos online</h3>
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, repudiandae.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla hic amet odio laboriosam tempore qui
+              esse
+              officia possimus modi. Totam.</p>
+            <button class="button--info">Explorar cursos online</button>
+          </article>
+
+
+          <%- include('./partials/carruceles/recursosCarrucel') %>
+
+        </section>
+
+        <!-- YOU TUBE -->
+
+        <section class="youtube">
+          <article class="youtube-info">
+            <h3>Comunidad</h3>
+            <h2>"Consciencia Cósmica" Visita nuestro canal de You Tube</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <button>
+              <div>
+                <a target="_blank" href="https://www.youtube.com/">Explorar canal</a>
+                <i class="fab fa-youtube"></i>
+              </div>
+            </button>
+          </article>
+
+          <article class="youtube-video">
+            <figure>
+              <a target="_blank" href="https://www.youtube.com/"><img src="/images/temporales/youtube.jpg" alt=""></a>
+            </figure>
+          </article>
+          <article class="youtube-video">
+            <figure>
+              <a target="_blank" href="https://www.youtube.com/"><img src="/images/temporales/youtube.jpg" alt=""></a>
+            </figure>
+          </article>
+          <article class="youtube-video">
+            <figure>
+              <a target="_blank" href="https://www.youtube.com/"><img src="/images/temporales/youtube.jpg" alt=""></a>
+            </figure>
+          </article>
+
+        </section>
 
         <!-- SEPARADOR -->
 
@@ -111,33 +169,35 @@
           <article>
             <p>“Camina como si estuvieras besando la tierra con sus pies.” <br>
               Thich Nhat Hanh
-              </p>
-              <img src="/images/separador.png" alt="">
+            </p>
           </article>
         </section>
 
         <!-- RECURSOS -->
 
         <section class="resources-home">
-         <article>
-          <img src="/images/podcast.jpg" alt="resources">
-          <button>ver</button>
-         </article>
-         
-         <article>
-          <img src="/images/podcast.jpg" alt="resources">
-          <button>ver</button>
-         </article>
-         
-         <article>
-          <img src="/images/podcast.jpg" alt="resources">
-          <button>ver</button>
-         </article>
-         
+
+          <article class="resources-home-info">
+            <h3>recursos</h3>
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, repudiandae.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla hic amet odio laboriosam tempore qui
+              esse
+              officia possimus modi. Totam.</p>
+            <button class="button--info">Explorar nuestros recursos</button>
+          </article>
+
+
+          <%- include('./partials/carruceles/podcastCarruceles') %>
+
         </section>
+
       </main>
+
 
       <%- include('./partials/footer') %>
   </body>
-<script src="js/home.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="/js/slider.js"></script>
+  <script src="js/home.js"></script>
+
 </html>

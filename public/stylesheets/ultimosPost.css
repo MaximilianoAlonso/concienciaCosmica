@@ -1,0 +1,128 @@
+
+.post{
+  display: none;
+}
+
+  @media screen and (min-width: 1024px) {
+    .post {
+      width: 100%;
+      max-width: 1000px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 50px auto;
+      padding: 20px;
+    }
+    
+    .post h2 {
+      width: 100%;
+      font-size: 2rem;
+      font-weight: 400;
+      margin: 20px 0;
+      text-transform: uppercase;
+      text-align: center;
+      letter-spacing: 2px;
+    }
+    
+    .post .item {
+      width: 320px;
+      padding: 10px;
+    }
+    
+    .post .item h4 {
+      margin-bottom: 10px;
+    }
+    
+    .post .item p {
+      margin-bottom: 10px;
+      color: lightslategrey;
+    }
+    
+    
+    
+    .post .item img {
+      display: block;
+      width: 100%;
+      margin-bottom: 20px;
+      background-color: saddlebrown;
+    }
+    
+    .post .item1 {
+      width: 640px;
+      position: relative;
+      padding: 10px;
+    }
+    
+    .post figure {
+      overflow: hidden;
+      width: 100%;
+      height: 200px;
+    
+    }
+    
+    .post figure img {
+      width: 100%;
+      height: auto
+    }
+    
+    .post .item h4 {
+      width: 100%;
+      margin-top: 10px;
+      font-weight: 900;
+    }
+    
+    .postEffect{
+      visibility: hidden;
+      margin-top: 200px;
+      transition:  all 1s;
+    
+    }
+    .postEffectBefore{
+      visibility:visible;
+      margin-top: 0;
+    }
+    
+    .post .item1 h3 {
+      width: 70%;
+      position: absolute;
+      top: 30px;
+      padding: 10px 15px;
+      background-color: rgba(255, 255, 255, 0.9);
+    }
+    
+    .post .item1 a {
+      font-size: 2rem;
+      font-weight: 400px;
+      background-color: #fdfdfd;
+      position: absolute;
+      bottom: 14px;
+      right: 10px;
+      padding: 5px 10px;
+      background-color: #fdfdfd;
+    }
+    
+    .post .item2 {
+      width: 320px;
+      text-align: center;
+      padding: 10px;
+      margin-top: 10px;
+    }
+    
+    .post .item2 h4 {
+      margin-bottom: 10px;
+    }
+    
+    .post .item2 p {
+      margin-bottom: 10px;
+      color: lightslategrey;
+    }
+    
+    .post button {
+      padding: 5px;
+      background-color: #fdfdfd;
+    }
+  
+  }
+  
+
+  
