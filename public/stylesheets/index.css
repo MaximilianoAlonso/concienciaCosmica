@@ -1,35 +1,31 @@
 .home {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   z-index: 0;
  
 
 
 }
+video{
+  width:100%
+}
 
 /* BANNER */
 .banner {
   display: flex;
   position: relative;
-  width: 100%;
+  width: 100% !important;
   margin: 0 auto;
   overflow: hidden;
 }
 
-.banner img{
-  width: 130%;
-  height: auto;
-  border-radius: 5px
-
-  
-}
 
 .banner article div {
   width: 100%;
   text-transform: uppercase;
   text-align: center;
   position: absolute;
-  top: 170px;
+  top: 490px;
   margin: 0 auto;
   color: #fdfdfd;
   letter-spacing: 3px;
@@ -37,6 +33,7 @@
   line-height: 35px;
   font-family: var(--tipografiaMenues);
   text-transform: uppercase;
+  text-shadow: 0 0 10px white;
   font-weight: 200;
 }
 
@@ -44,15 +41,53 @@
   margin-top: 20px;
 }
 
+.banner article div p{
+  opacity: 0;
+color: rgba(255, 255, 255, 0);
+  transition: all 4s
+}
+.bannerEffect-p{
+
+  opacity: 1 !important;
+  color: rgba(255, 255, 255, 0.993) !important;
+  text-shadow: 0 0 5px white;
+}
+
+
+
 /* TEXTO BIENVENIDA */
 
 .bienvenida {
-
-  padding: 30px;
+display: flex;
+flex-wrap: nowrap;
+margin-top: -5px !important;
   width: 100%;
   text-align: center;
-  margin: 150px auto;
+  margin: 0 auto;
+  width: 100%;
+  position:relative
 
+
+}
+.bienvenida article{
+  width:50%;
+  border-radius: 10px;
+  background-color: #fdfdfd79;
+  position: absolute;
+  right: 20px;
+  height: 60%;
+  margin: 50px;
+  padding:100px;
+}
+.bienvenida figure{
+  width:100%;
+
+ 
+
+}
+.bienvenida figure img{
+  width:100%;
+ 
 
 }
 
@@ -60,14 +95,15 @@
 .bienvenida h2 {
   text-transform: uppercase;
   font-size: 2rem;
-  font-weight: 400;
-  margin: 30px 0;
+  font-weight: 400;text-shadow: 1px 1px 5px white;
+
 }
 
 .bienvenida p {
   font-size: 1.5rem;
   line-height: 2rem;
   margin: 30px 0;
+
 }
 
 /* POST */
@@ -240,473 +276,3 @@
   outline: none;
   border: none;
 }
-
-
-@media (max-width: 1440px) {
-
-
-  /* BANNER */
-  .banner {
-    width:92%;
-  }
-
- 
-
-  .banner article p {
-    margin: auto 0;
-    top: 40%;
-  }
-
-  /* POST */
-
-  .post {
-    width: 80%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 100px auto;
-    padding: 0px;
-  }
-
-  .post .item {
-    width: 320px;
-    margin: 0;
-  }
-
-  .post .item1 {
-    width: 100%;
-  }
-
-  .post .item2 {
-    display: none;
-    width: 320px;
-    text-align: center;
-    padding: 10px;
-  }
-
-
-  /* SEPARADOR */
-
-
- 
-
-}
-
-@media (max-width:1280px) {
-
-  /* BANNER */
-  .banner {
-    width: 95%;
-  }
-
-  .banner article p {
-    width: 100%;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 1rem;
-    font-weight: 300;
-    position: absolute;
-    top: 40%;
-    margin: 0 auto;
-    color: #fdfdfd;
-  }
-
-  /* TEXTO BIENVENIDA */
-
-
-
-  /* POST */
-
-  .post {
-    width: 100%;
-    padding: 10px;
-  }
-
-  .post .item {
-    width: 300px;
-    padding: 10px;
-    margin: 0 0;
-  }
-
-
-  .post .item1 {
-    width: 100%;
-    position: relative;
-    padding: 10px;
-  }
-
-
-
-  .post .item2 {
-    width: 300px;
-    text-align: center;
-    padding: 10px;
-  }
-
-}
-
-@media (max-width: 1023px) {
-  .home {
-    width: 100%;
-    margin: 0 auto;
-    z-index: 0;
-    max-width: 1500px;
-    padding: 20px;
-  }
-  
-  /* BANNER */
-  .banner {
-    width: 100%;
-    position: relative;
-    margin: 0 auto;
-    margin-bottom: 100px;
-  }
-  
-
-  .banner article p {
-    width: 100%;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 1rem;
-    font-weight: 300;
-    position: absolute;
-    top: 40%;
-    margin: 0 auto;
-    color: #fdfdfd;
-  }
-  
-  
-  
-  /* TEXTO BIENVENIDA */
-  
-  .bienvenida {
-    width: 100%;
-    text-align: center;
-  }
-  
-  .bienvenida h2 {
-    text-transform: uppercase;
-    font-size: 2rem;
-    font-weight: 400;
-    margin: 30px 0;
-  }
-  
-  .bienvenida p {
-    font-size: 1.5rem;
-    line-height: 2rem;
-    margin: 30px 0;
-  }
-  
-  /* POST */
-  
-  .post {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 50px auto;
-    padding: 0;
-    gap: 0;
-  }
-  
-  .post h2 {
-    width: 100%;
-    font-size: 2rem;
-    margin: 20px 0;
-    text-transform: uppercase;
-    text-align: center;
-  }
-  
-  .post .item {
-    width: 240px;
-    padding: 10px;
-  }
-  
-  .post .item h4 {
-    margin-bottom: 10px;
-  }
-  
-  .post .item p {
-    margin-bottom: 10px;
-    color: lightslategrey;
-  }
-  
-  .post .item img {
-    display: block;
-    width: 100%;
-   
-    margin-bottom: 20px;
-    background-color: saddlebrown;
-  }
-  
-  .post .item1 {
-    display: none;
-    position: relative;
-    padding: 10px;
-  }
-  
-  .post .item1 img {
-    display: block;
-    width: 100%;
-    background-color: red;
-  }
-  
-  .post .item1 h3 {
-    position: absolute;
-    top: 30px;
-    padding: 10px 15px;
-    background-color: rgba(255, 255, 255, 0.9);
-  }
-  
-  .post .item1 a {
-    font-size: 2rem;
-    font-weight: 400px;
-    background-color: #fdfdfd;
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    padding: 5px 10px;
-    background-color: #fdfdfd;
-  }
-  
-
-  
-  .post button {
-    padding: 5px;
-    background-color: #fdfdfd;
-  }
-  
-
-  
-  
-  
-  /* RESOURCES */
-  
-  .resources-home {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin: 50px auto;
-  
-  }
-  
-  .resources-home img {
-    display: block;
-    background-color: bisque;
-    width: 200px;
-    height: 200px;
-    border: solid 3px #436c79;
-    border-radius: 10px;
-  }
-  
-  .resources-home button {
-    display: block;
-    width: 50%;
-    padding: 15px;
-    border-radius: 10px;
-    margin: 10px auto;
-    background-color: #436c79;
-    color: #fdfdfd;
-    outline: none;
-    border: none;
-  }
-}
-
-@media (max-width: 767px) {
-  .home {
-    width: 100%;
-    margin: 0 auto;
-    z-index: 0;
-    max-width: 1500px;
-    padding: 20px;
-  }
-  
-  /* BANNER */
-  .banner {
-    width: 100%;
-    position: relative;
-    margin: 0 auto;
-    margin-bottom: 100px;
-  }
-  
-  .banner img{
-    width: 100%;
-  }
-  
-  .banner article p {
-    width: 100%;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 0.5rem;
-    font-weight: 300;
-    position: absolute;
-    top: 40%;
-    margin: 0 auto;
-    color: #fdfdfd;
-  }
-  
-  
-  
-  /* TEXTO BIENVENIDA */
-  
-  .bienvenida {
-    width: 100%;
-    text-align: center;
-  }
-  
-  .bienvenida h2 {
-    text-transform: uppercase;
-    font-size: 2rem;
-    font-weight: 400;
-    margin: 30px 0;
-  }
-  
-  .bienvenida p {
-    font-size: 1.5rem;
-    line-height: 2rem;
-    margin: 30px 0;
-  }
-  
-  /* POST */
-  
-  .post {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 50px auto;
-    padding: 0;
-  }
-  
-  .post h2 {
-    width: 100%;
-    font-size: 2rem;
-    margin: 20px 0;
-    text-transform: uppercase;
-    text-align: center;
-  }
-  
-  .post .item {
-    width: 320px;
-    padding: 10px;
-  }
-  
-  .post .item h4 {
-    margin-bottom: 10px;
-  }
-  
-  .post .item p {
-    margin-bottom: 10px;
-    color: lightslategrey;
-  }
-  
-  .post .item img {
-    display: block;
-    width: 100%;
-    height: 200px;
-    margin-bottom: 20px;
-    background-color: saddlebrown;
-  }
-  
-  .post .item1 {
-    display: none;
-    position: relative;
-    padding: 10px;
-  }
-  
-  .post .item1 img {
-    display: block;
-    width: 100%;
-    height: 500px;
-    background-color: red;
-  }
-  
-  .post .item1 h3 {
-    position: absolute;
-    top: 30px;
-    padding: 10px 15px;
-    background-color: rgba(255, 255, 255, 0.9);
-  }
-  
-  .post .item1 a {
-    font-size: 2rem;
-    font-weight: 400px;
-    background-color: #fdfdfd;
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    padding: 5px 10px;
-    background-color: #fdfdfd;
-  }
-
-  .post .item2 {
-    display: block;
-  }
-  
-
-  
-  .post button {
-    padding: 5px;
-    background-color: #fdfdfd;
-  }
-  
-
-  
-  /* RESOURCES */
-  
-  .resources-home {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 5px;
-    margin: 50px auto;
-  
-  }
-  
-  .resources-home img {
-    display: block;
-    background-color: bisque;
-    width: 200px;
-    height: 200px;
-    border: solid 3px #436c79;
-    border-radius: 10px;
-  }
-  
-  .resources-home button {
-    display: block;
-    width: 50%;
-    padding: 15px;
-    border-radius: 10px;
-    margin: 10px auto;
-    background-color: #436c79;
-    color: #fdfdfd;
-    outline: none;
-    border: none;
-  }
-}
-
-/* .post figure{
-  overflow: hidden !important;
-  width: 100% !important;
-  height: 200px !important;
-  
-}
-.post figure img{
-
-  width: 100% !important;
-  height: auto !important
-  
-}
-.post .item h4{
-  margin-top: 10px !important;
-  font-weight: 900 !important;
-}
-.postEffect{
-  opacity: 0;
-  transition:  all 1s;
-
-}
-.postEffectBefore{
-opacity: 1 !important;
-} */

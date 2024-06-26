@@ -13,14 +13,14 @@
         <section class="banner">
           <article>
             <div>
-              <p>“Tu visión se volverá más clara cuando mires dentro de tu propio corazón. 
+              <p>“Tu visión se volverá más clara cuando mires dentro de tu propio corazón. </p>
                 <p>Quien mira hacia afuera,
                 sueña. Quien mira hacia adentro, despierta.” </p>
               <p class="cita">Carl Gustav Jung</p>  
-              </p>
+            
             </div>
             
-            <img src="/images/banner.png" alt="">
+            <video src="/images/banner.mp4" alt="Video description" autoplay   muted></video>
             
           </article>
 
@@ -29,13 +29,15 @@
         <!-- BIENVENIDA -->
 
         <section class="bienvenida">
+          <figure>
+            <img src="/images/buda.jpg" alt="">
+          </figure>
           <article>
             <h2>un placer tenerte aqui</h2>
-            <p>Bienvenidos a nuestro espacio. <br>
-              En Consciencia Cósmica abordamos y concebimos a cada ser desde una <br>
-              perspertiva holística. Utilizando herramientas como la astrología, la meditación y<br>
-              las terapias complementarias, fomentamos procesos de sanación conscientes,<br>
-              responsables y voluntarios</p>
+            <p>Bienvenidos a nuestro espacio. 
+              En Consciencia Cósmica abordamos y concebimos a cada ser desde una 
+              perspertiva holística. Utilizando herramientas como la astrología, la meditación y
+              las terapias complementarias, fomentamos procesos de sanación conscientes, responsables y voluntarios</p>
           </article>
         </section>
 
@@ -143,5 +145,24 @@
 
       <%- include('./partials/footer') %>
   </body>
+  <script>
+
+const bannerText = document.querySelectorAll(".banner article div p")
+
+window.addEventListener("load", function()
+{
+
+  bannerText.forEach((item,index) => {
+    setTimeout(() => {
+      item.classList.add("bannerEffect-p")
+      
+    }, index * 2500);
+
+
+  })
+
+})
+
+  </script>
 <script src="js/home.js"></script>
 </html>

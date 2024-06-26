@@ -1,12 +1,16 @@
 .header {
-  width: 80%;
-  max-width: 1500px;
+  width: 100% !important; 
+
   margin: 0 auto;
-  padding: 10px 0;
+  padding: 10px 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  z-index: 100;
+  background-color: rgba(255, 255, 255, 0.935);
+  box-shadow: 0 0 15px rgb(255, 255, 255);
 }
 
 /* header logo */
@@ -23,10 +27,11 @@
   text-transform: uppercase;
   font-weight: 100;
   font-size:25px;
+  color: #5a4d3a;
 }
 
 .logo img {
-  width: 80px;
+  width: 75px;
 }
 
 /* header menu */
@@ -100,7 +105,7 @@ display: none;
 @media (max-width: 1440px) {
   .header {
     width: 85%;
-    max-width: 1200px;
+
     padding: 20px 0;
   }
 
@@ -124,7 +129,7 @@ display: none;
 @media (max-width: 1280px) {
   .header {
     width: 90%;
-    max-width: 1200px;
+
     padding: 20px 0;
   }
 
@@ -151,7 +156,7 @@ display: none;
 @media (max-width: 1024px) {
   .header {
     width: 95%;
-    max-width: 1200px;
+   
     padding: 20px 0;
     gap: 15px;
     flex-direction: column;
@@ -184,7 +189,7 @@ display: none;
 @media (max-width: 767px) {
   .header {
     width: 100%;
-    max-width: 1500px;
+  
     margin: 0 auto;
     padding: 20px 10px;
     display: flex;
