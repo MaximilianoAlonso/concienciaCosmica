@@ -11,6 +11,7 @@
     width: 100%;
     position: relative;
     z-index: 0;
+
 }
 
 .inicio .banner figure {
@@ -29,20 +30,28 @@
     display: none;
 }
 
-
-
 .inicio .banner .slogan {
-    width: 100%;
-    position: absolute;
-    top: 35%;
-    text-align: center;
-    color: #fdfdfd;
+    width: 100vw;
+position: absolute;
+    top: 25%; 
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0);
+margin: 0 auto;
+    color: #fdfdfd00;
     font-size: 0.8rem;
-    padding: 10px 0;
-    background-color: rgba(0, 0, 0, 0.5);
+text-align: center;
+    background-color: rgba(0, 0, 0, 0);
+text-shadow: 0 0 20px white;
+  padding: 20px;
+    transition: all 10s;
 }
 
+.effectBanner{ 
+    background-color: #0000007c !important;
+color: white !important;
+box-shadow: 0 0 3px rgb(0, 0, 0) !important;
 
+
+}
 /* WELCOME */
 
 .inicio .welcome {
@@ -373,7 +382,7 @@
 }
 
 
-@media screen and (min-width: 1024px) {
+@media screen and  (min-width: 1024px) {
 
     /* BANNER */
 
@@ -383,6 +392,7 @@
 
     .video-banner {
         display: block;
+  
     }
 
     .inicio .banner figure {
@@ -395,10 +405,29 @@
 
     }
 
-    .inicio .banner .slogan {
-        font-size: 1.3rem;
-    }
+    
+.inicio .banner .slogan {
 
+    top: 25%; 
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0);
+
+    color: #fdfdfd00;
+    font-size: 1.5rem;
+    padding: 50px 0;
+    background-color: rgba(0, 0, 0, 0);
+text-shadow: 0 0 20px white;
+    line-height: 35px;
+    letter-spacing: 2px;
+    transition: all 10s;
+}
+
+.effectBanner{ 
+    background-color: #0000007c !important;
+color: white !important;
+box-shadow: 0 0 3px rgb(0, 0, 0) !important;
+
+
+}
     /* WELCOME */
 
     .inicio .welcome {

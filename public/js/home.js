@@ -13,3 +13,11 @@ window.addEventListener("scroll", function (){
 
 })
 
+const frase = document.querySelector(".slogan")
+
+window.addEventListener("load",  function(){
+    frase.classList.add("effectBanner")
+
+
+
+})
